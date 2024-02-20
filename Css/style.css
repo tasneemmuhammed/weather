@@ -1,0 +1,151 @@
+body{
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    background-image: url(pexels-josh-sorenson-391522.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 400px;
+    height: 100px;
+    background-color: rgba(255, 175, 216, 0.2);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(225, 225, 225, 0.2);
+    border-radius: 16px;
+    padding: 20px;
+    color: white;
+    transition: height .6s ease;
+}
+.search{
+    position: relative;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+.search input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(225, 225, 225, 0.2);
+    outline: none;
+    border-radius: 10px;
+    font-size: 22px;
+    color: white;
+    padding: 0 48px 0 42px;
+    text-transform: capitalize;
+}
+.search input::placeholder{
+    color: white;
+    text-transform: capitalize;
+}
+.search button{
+    position: absolute;
+    right: 0;
+    width: 40px;
+    height: 100px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 28px;
+    color: white;
+    padding: 0 40px 0 5px;
+    cursor: pointer;
+}
+.search i{
+    position: absolute;
+    left: 10px;
+    font-size: 28px;
+    color: navy;
+}
+.weather{
+    text-align: center;
+    margin: 40px 0;
+}
+.weather img{
+    width: 60%;
+}
+.weather .temperature{
+    position: relative;
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 700;
+    margin: 20px 0 6px -30px;
+}
+.weather .temperature span{
+    position: absolute;
+    font-size: 24px;
+    margin-left: 4px;
+}
+.weather .description{
+    font-size: 25px;
+    text-transform: capitalize;
+}
+.details{
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+}
+.details .humidity,
+.details .wind{
+display: flex;
+align-items: center;
+width: 50%;
+}
+.details .humidity{
+    padding-left: 20px;
+    justify-content: flex-start;
+}
+.details .wind{
+    padding-right: 20px;
+    justify-content: flex-end;
+}
+.details i{
+    font-size: 56px;
+    margin-right: 10px;
+    color: navy;
+}
+.details span{
+display: inline-block;
+font-size: 22px;
+font-weight: 500;
+}
+.details p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.weather,
+.details,
+.not-found{
+    visibility: hidden;
+}
+.weather.active,
+.details.active,
+.not-found.active{
+    visibility: visible;
+}
+.not-found{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 110px;
+}
+.not-found img{
+width:65%;
+}
+.not-found p{
+    font-size: 22px;
+    font-weight: 500;
+    margin-top: 12px;
+}

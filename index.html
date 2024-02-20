@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forcast</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Css/all.min.css">
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body>
+   <div class="container">
+     <div class="search">
+      <i class="fa-solid fa-location-dot"></i>
+      <input type="text" placeholder="Enter city">
+      <button class="fa-brands fa-searchengin bg-none"></button>
+     </div>
+     <div class="weather">
+       <div class="box">
+        <div class="info">
+        <div class="data">
+            <img src="cloud.png" alt="Cloud">
+            <p class="temperature">0<span>°C</span></p> 
+            <p class="description">Broken Clouds</p>               
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="details">
+           <div class="humidity">
+            <i class="fa-solid fa-water"></i>
+            <div class="texth">
+              <div class="hinfo">
+                <span>0%</span>
+              </div>
+              <p>Humidity</p>
+            </div>
+           </div> 
+           <div class="wind">
+            <i class="fa-solid fa-wind"></i>
+            <div class="textw">
+              <div class="winfo">
+                <span>0Cm/h</span>
+              </div>
+              <p>Wind Speed</p>
+            </div>
+           </div> 
+        </div>
+        <div class="not-found">
+         <div class="box">
+            <img src="404.png">
+            <p>Oops! Location not found!</p>
+         </div>
+        </div>
+   </div>
+
+
+    <script src="Js/bootstrap.bundle.min.js"></script>
+    <script src="Js/index.js"></script>
+</body>
+</html>
